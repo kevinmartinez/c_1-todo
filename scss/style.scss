@@ -16,6 +16,8 @@ $ninth: #2ecc71;
 $heading-family: 'Oxygen', sans-serif;
 $paragraph-family: 'Source Sans Pro', sans-serif;
 
+$element-padding: 50px;
+
 // $family: 'Oxygen', sans-serif;
 // $font-family: 'Source Sans Pro', sans-serif;
 
@@ -50,5 +52,14 @@ p, li {
 
 header {
     background-color: $seventh;
-    padding: 50px;
+    padding: $element-padding;
+}
+
+footer {
+    background-color: $ninth;
+    padding: $element-padding;
+}
+
+form {
+    padding: $element-padding;
 }
