@@ -1,16 +1,54 @@
-$primary: #000;
-$secondary: #ccc;
-$max-width: 1200px;
+@import 'normalize';
+
+
+// Colors from flatuicolors.com
+$primary: #3498db;
+$secondary: #2980b9;
+$third: #34495e;
+$fourth: #2c3e50;
+$fifth: #ecf0f1;
+$sixth: #bdc3c7;
+$seventh: #e74c3c;
+$eight: #c0392b;
+$ninth: #2ecc71;
+
+// Font variables
+$heading-family: 'Oxygen', sans-serif;
+$paragraph-family: 'Source Sans Pro', sans-serif;
+
+// $family: 'Oxygen', sans-serif;
+// $font-family: 'Source Sans Pro', sans-serif;
+
 
 // TODO: Add normalize... Or maybe not, Foundation has it i suppose.
 // TODO: Check if Foundation use normalize.css
 
 * {
     box-sizing: border-box;
+    // TODO: Remove element border before moving to /dist
+    // TODO: This is my helper element border :)
+    border: 1px solid yellow;
 }
 
 body {
     background-color: $secondary;
+    // TODO: Setting color & font for all headings to body default, consider to change heading control to a scss mixin?
+    color: $fifth;
+    font-family: $heading-family;
+}
+
+// TODO: Move this to normalize.css if used
+ul {
+    list-style-type: none;
     padding: 0;
-    margin: 0;
+}
+
+p, li {
+    font-family: $paragraph-family;
+    color: #2c3e50;
+}
+
+header {
+    background-color: $seventh;
+    padding: 50px;
 }
