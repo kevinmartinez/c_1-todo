@@ -27,21 +27,66 @@
         <h1>Kevin Martinez Todo List Application</h1>
         <section>
           <h1>Add a Todo</h1>
+          <div>
+            <!-- Form Element to contain add input text content -->
+            <form>
+              <label for="add">Add Task</label>
+              <input type="text" id="add" placeholder="Write your text here...">
+              <button type="submit">Add a new Task</button>
+            </form>
+          </div>
         </section>
       </header>
       <main id="main-content">
         <h1>Incomplete Todo's</h1>
         <section>
           <!-- TODO: Try to find appropriate heading text for this section -->
+
+          <!-- Unordered list to contain added list item -->
           <ul>
+            <!-- Placeholder added task LI -->
+
+            <!-- New added task -->
             <li>
               <p>Clean</p>
-              <button></button>
+              <label for="check">Complete task!</label>
+              <!-- TODO: Do i need #check for the checkbox. The app will create several LI's and they will get the same ID... not good -->
+              <input type="checkbox" id="check">
+              <button type="button" name="edit-button">Edit</button>
+              <button type="button" name="delete-button">Delete</button>
             </li>
+
+            <!-- Incomplete Task in Edit Mode -->
+            <li>
+              <p><input type="text" id="edit-input" placeholder="Clean"></p>
+              <label for="check">Complete task!</label>
+              <!-- TODO: Do i need #check for the checkbox. The app will create several LI's and they will get the same ID... not good -->
+              <input type="checkbox" id="check">
+              <button type="button" name="save-button">Save</button>
+              <button type="button" name="delete-button">Delete</button>
+            </li>
+
+
+
             <li>Item 2</li>
             <li>Item 3</li>
             <li>Item 4</li>
             <li>Item 5</li>
+          </ul>
+        </section>
+
+        <!-- Completed Tasks -->
+        <section>
+          <!-- TODO: Change text -->
+          <h1>Todays Completed Tasks</h1>
+          <ul>
+            <li>
+              <p>Clean</p>
+              <label for="check">Complete task!</label>
+              <!-- TODO: Do i need #check for the checkbox. The app will create several LI's and they will get the same ID... not good -->
+              <input type="checkbox" id="check" checked="">
+              <button type="button" name="delete-button">Delete</button>
+            </li>
           </ul>
         </section>
 
