@@ -48,26 +48,19 @@
 
             <!-- New added task -->
             <li>
-              <p>Clean</p>
-              <label for="check">Complete task!</label>
-              <!-- TODO: Do i need #check for the checkbox. The app will create several LI's and they will get the same ID... not good -->
-              <input type="checkbox" id="check">
+              <input type="checkbox">
+              <label>Clean</label>
               <button type="button" name="edit-button">Edit</button>
               <button type="button" name="delete-button">Delete</button>
             </li>
 
             <!-- Incomplete Task in Edit Mode -->
             <li>
-              <p><input type="text" id="edit-input" placeholder="Clean"></p>
-              <label for="check">Complete task!</label>
-              <!-- TODO: Do i need #check for the checkbox. The app will create several LI's and they will get the same ID... not good -->
-              <input type="checkbox" id="check">
+              <input type="checkbox">
+              <input type="text" id="edit-input" placeholder="Clean">
               <button type="button" name="save-button">Save</button>
               <button type="button" name="delete-button">Delete</button>
             </li>
-
-
-
             <li>Item 2</li>
             <li>Item 3</li>
             <li>Item 4</li>
@@ -81,10 +74,8 @@
           <h1>Todays Completed Tasks</h1>
           <ul>
             <li>
-              <p>Clean</p>
-              <label for="check">Complete task!</label>
-              <!-- TODO: Do i need #check for the checkbox. The app will create several LI's and they will get the same ID... not good -->
-              <input type="checkbox" id="check" checked="">
+              <input type="checkbox" checked="">
+              <label>Clean</label>
               <button type="button" name="delete-button">Delete</button>
             </li>
           </ul>
