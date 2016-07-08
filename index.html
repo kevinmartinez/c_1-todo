@@ -26,23 +26,26 @@
       <![endif]-->
 
       <!-- Adding main- id's to the main elements at the moment for a easier start with the JavaScript -->
-      <header id="main-header">
-        <h1>Kevin Martinez Todo List Application</h1>
-        <section>
-          <h1>Add a Todo</h1>
-          <div>
-            <!-- Form Element to contain add input text content -->
-            <form>
-              <label for="add">Add Task</label>
-              <input type="text" id="add" placeholder="Write your text here...">
-              <button type="submit">Add a new Task</button>
-            </form>
-          </div>
-        </section>
+      <!-- Class expanded for fluid Foundation row -->
+      <header id="main-header" class="expanded row">
+        <div class="small-8 small-centered columns">
+          <h1>Kevin Martinez Todo List Application</h1>
+          <section class="row">
+            <div class="small-12 small-centered columns">
+              <h1>Add a Todo</h1>
+              <!-- Form Element to contain add input text content -->
+              <form>
+                <label for="add">Add Task</label>
+                <input type="text" id="add" placeholder="Write your text here...">
+                <button type="submit">Add a new Task</button>
+              </form>
+            </div>
+          </section>
+        </div>
       </header>
       <main id="main-content">
         <h1>Incomplete Todo's</h1>
-        <section>
+        <section class="row">
           <!-- TODO: Try to find appropriate heading text for this section -->
 
           <!-- Unordered list to contain added list item -->
@@ -53,16 +56,16 @@
             <li>
               <input type="checkbox">
               <label>Clean</label>
-              <button type="button" name="edit-button">Edit</button>
-              <button type="button" name="delete-button">Delete</button>
+              <button type="button" class="success button" name="save-button">Save</button>
+              <button type="button" class="alert button" name="delete-button">Delete</button>
             </li>
 
             <!-- Incomplete Task in Edit Mode -->
             <li>
               <input type="checkbox">
               <input type="text" id="edit-input" placeholder="Clean">
-              <button type="button" name="save-button">Save</button>
-              <button type="button" name="delete-button">Delete</button>
+              <button type="button" class="success button" name="save-button">Save</button>
+              <button type="button" class="alert button" name="delete-button">Delete</button>
             </li>
             <li>Item 2</li>
             <li>Item 3</li>
@@ -72,21 +75,23 @@
         </section>
 
         <!-- Completed Tasks -->
-        <section>
+        <section class="row">
           <!-- TODO: Change text -->
           <h1>Todays Completed Tasks</h1>
           <ul>
             <li>
               <input type="checkbox" checked="">
               <label>Clean</label>
-              <button type="button" name="delete-button">Delete</button>
+              <button type="button" class="alert button" name="delete-button">Delete</button>
             </li>
           </ul>
         </section>
 
       </main>
-      <footer id="main-footer">
-        <p>Made with Love by Kevin Martinez &copy;2016</p>
+      <footer id="main-footer" class="expanded row">
+        <div class="small-3 small-centered columns">
+          <p>Made with Love by Kevin Martinez &copy;2016</p>
+        </div>
       </footer>
       <!-- Compressed Foundation for Sites JavaScript -->
       <script src="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js"></script>
