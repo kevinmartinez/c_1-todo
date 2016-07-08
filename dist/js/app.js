@@ -1,1 +1,0 @@
-(function(){"use strict";var n="Kevin";console.log(n.length)})();
