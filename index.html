@@ -28,16 +28,18 @@
       <!-- Adding main- id's to the main elements at the moment for a easier start with the JavaScript -->
       <!-- Class expanded for fluid Foundation row -->
       <header id="main-header" class="expanded row">
-        <div class="small-8 small-centered columns">
+        <div class="small-12 small-centered columns">
           <h1>Kevin Martinez Todo List Application</h1>
           <section class="row">
             <div class="small-12 small-centered columns">
               <h1>Add a Todo</h1>
+
               <!-- Form Element to contain add input text content -->
-              <form>
+              <form name="submit-task">
                 <label for="add">Add Task</label>
-                <input type="text" id="add" placeholder="Write your text here...">
-                <button type="submit">Add a new Task</button>
+                <input type="text" placeholder="Write your text here...">
+                <!-- #submitBtn -->
+                <button type="button" class="button" id="submitBtn">Add a new Task</button>
               </form>
             </div>
           </section>
@@ -49,14 +51,15 @@
           <!-- TODO: Try to find appropriate heading text for this section -->
 
           <!-- Unordered list to contain added list item -->
-          <ul>
+          <ul id="incompletedList">
             <!-- Placeholder added task LI -->
 
             <!-- New added task -->
             <li>
               <input type="checkbox">
               <label>Clean</label>
-              <button type="button" class="success button" name="save-button">Save</button>
+              <!-- Remember that alert class is a Foundation class while edit is NOT a Foundation class -->
+              <button type="button" class="edit button" name="edit-button">Edit</button>
               <button type="button" class="alert button" name="delete-button">Delete</button>
             </li>
 
@@ -78,7 +81,7 @@
         <section class="row">
           <!-- TODO: Change text -->
           <h1>Todays Completed Tasks</h1>
-          <ul>
+          <ul id="completedList">
             <li>
               <input type="checkbox" checked="">
               <label>Clean</label>
