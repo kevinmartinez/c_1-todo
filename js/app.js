@@ -4,29 +4,27 @@ console.log('Start... Todo List program');
 
 // Get mockup elements from the HTML
 
+// Get Form element with .forms property on the document, get with name attribute and get first element node
+var taskInput = document.getElementById('submitForm').elements['task-input'];
+console.log(taskInput.value);
+
 // Get Submit button = #submitBtn
 var submitButton = document.getElementById('submitBtn');
-console.log(submitButton);
 // Get Complete checkbox
+var checkbox = document.querySelector('input[type="checkbox"]');
 
 // Get Edit button
 var editButton = document.querySelector('.edit');
-console.log(editButton);
 // Get Save button (Accessing this with foundations .success class that i will use for my Save Buttons)
 var saveButton = document.querySelector('.success');
-console.log(saveButton);
 // Get delete button (Using Foundations .delete class for my Delete Button)
 var deleteButton = document.querySelector('.delete')
 
 // Get Incomplete List Items Holder Holder #incompletedList
 var incompletedListsHolder = document.getElementById('incompletedList');
-console.log(incompletedListsHolder);
 
 // Get Completed List Items Holder #completedList
 var completedListsHolder = document.getElementById('completedList');
-console.log(completedListsHolder);
-
-
 
 
 // Create a function to handle Add Tasks
@@ -69,8 +67,12 @@ var deleteTask = function () {
     //     * Task is removed from parent tasks list
 };
 
-
-
 // TODO: 5. Add to LocalStorage
+
+// Create eventListeners
+submitButton.addEventListener('click', addTask);
+
+
+
 
 console.log('End... - Todo List program');
