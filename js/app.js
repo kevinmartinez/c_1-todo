@@ -4,9 +4,8 @@ console.log('Start... Todo List program');
 
 // Get mockup elements from the HTML
 
-// Get Form element with .forms property on the document, get with name attribute and get first element node
+// Rewrote element selection to get by form element id and use the .elements property with the name selector to select the input elements name value
 var taskInput = document.getElementById('submitForm').elements['task-input'];
-console.log(taskInput.value);
 
 // Get Submit button = #submitBtn
 var submitButton = document.getElementById('submitBtn');
