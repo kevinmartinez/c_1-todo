@@ -27,68 +27,63 @@
 
       <!-- Adding main- id's to the main elements at the moment for a easier start with the JavaScript -->
       <!-- Class expanded for fluid Foundation row -->
-      <header id="main-header" class="expanded row">
-        <div class="small-12 small-centered columns">
-          <h1>Kevin Martinez Todo List Application</h1>
-          <section class="row">
-            <div class="small-12 small-centered columns">
-              <h1>Add a Todo</h1>
-
-              <!-- Form Element to contain add input text content -->
-              <form id="submitForm">
-                <label for="task-input">Add Task</label>
-                <input type="text" name="task-input" placeholder="Write your text here...">
-                <!-- #submitBtn -->
-                <button type="button" class="button" id="submitBtn">Add a new Task</button>
-              </form>
-            </div>
-          </section>
-        </div>
+      <header id="main-header">
+          <div class="row">
+            <h1 class="small-6 small-centered columns">Kevin Martinez Todo List Application</h1>
+          </div>
+          <!-- Form Element to contain add input text content -->
+          <div class="row">
+            <form id="submitForm" class="small-6 small-centered columns">
+              <label for="task-input">Add Task</label>
+              <input type="text" id="task-input" name="task-input" placeholder="Write your text here...">
+              <!-- #submitBtn -->
+              <button type="button" class="button" id="submitBtn">Add a new Task</button>
+            </form>
+          </div>
       </header>
-      <main id="main-content">
-        <h1>Incomplete Todo's</h1>
-        <section class="row">
-          <!-- TODO: Try to find appropriate heading text for this section -->
 
+      <main id="main-content">
+        <div class="row">
+            <h1 class="small-6 small-centered columns">Incomplete Todo's</h1>
+        </div>
+        <div class="row">
           <!-- Unordered list to contain added list item -->
-          <ul id="incompletedList">
+          <ul id="incompletedList" class="small-6 small-centered columns">
             <!-- Placeholder added task LI -->
 
             <!-- New added task -->
-            <li>
+            <!-- <li>
               <input type="checkbox">
-              <label>Clean</label>
+              <label>Clean</label> -->
               <!-- Remember that alert class is a Foundation class while edit is NOT a Foundation class -->
-              <button type="button" class="edit button" name="edit-button">Edit</button>
+              <!-- <button type="button" class="edit button" name="edit-button">Edit</button>
               <button type="button" class="alert button" name="delete-button">Delete</button>
-            </li>
+            </li> -->
 
             <!-- Incomplete Task in Edit Mode -->
-            <li>
+            <!-- <li>
               <input type="checkbox">
               <input type="text" id="edit-input" placeholder="Clean">
               <button type="button" class="success button" name="save-button">Save</button>
               <button type="button" class="alert button" name="delete-button">Delete</button>
-            </li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-            <li>Item 5</li>
+            </li> -->
           </ul>
-        </section>
+        </div>
 
         <!-- Completed Tasks -->
-        <section class="row">
+        <div class="row">
           <!-- TODO: Change text -->
-          <h1>Todays Completed Tasks</h1>
-          <ul id="completedList">
-            <li>
+          <h1 class="small-6 small-centered columns">Todays Completed Tasks</h1>
+        </div>
+        <div class="row">
+          <ul id="completedList" class="small-6 small-centered columns">
+            <!-- <li>
               <input type="checkbox" checked="">
               <label>Clean</label>
               <button type="button" class="alert button" name="delete-button">Delete</button>
-            </li>
+            </li> -->
           </ul>
-        </section>
+        </div>
 
       </main>
       <footer id="main-footer" class="expanded row">
